@@ -1,6 +1,7 @@
 package com.neusoft.studyEnglish.service;
 
 import com.neusoft.studyEnglish.dao.UserMapper;
+import com.neusoft.studyEnglish.entity.Collections;
 import com.neusoft.studyEnglish.entity.User;
 import com.neusoft.studyEnglish.tool.Result;
 import com.neusoft.studyEnglish.tool.ResultStateInfo;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -130,6 +132,54 @@ public class UserService {
             return Result.ok(100, ResultStateInfo.UPLOAD_SUCCESS, true);
         } else {
             return Result.error(200, ResultStateInfo.UPLOAD_FAIL, false);
+        }
+    }
+
+    /**
+     * 根据类别查询收藏的作文和翻译
+     *
+     * @param userId
+     * @param type
+     * @return
+     */
+    public Result zfCollectionList(String userId, String type) {
+        List<Collections> zfCollectionList = userMapper.zfCollectionList(userId, type);
+        if (zfCollectionList.size() != 0) {
+            return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, zfCollectionList);
+        } else {
+            return Result.error(200, ResultStateInfo.SELECT_FAIL);
+        }
+    }
+
+    /**
+     * 根据类别查询收藏的听力和阅读
+     *
+     * @param userId
+     * @param type
+     * @return
+     */
+    public Result lrCollectionList(String userId, String type) {
+        List<Collections> lrCollectionList = userMapper.lrCollectionList(userId, type);
+        if (lrCollectionList.size() != 0) {
+            return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, lrCollectionList);
+        } else {
+            return Result.error(200, ResultStateInfo.SELECT_FAIL);
+        }
+    }
+
+    /**
+     * 取消收藏
+     *
+     * @param userId
+     * @param contentId
+     * @return
+     */
+    public Result deleteMyCollection(String userId, String contentId) {
+        int code = userMapper.deleteMyCollection(userId, contentId);
+        if (code == 0) {
+            return Result.error(200, ResultStateInfo.DELETE_FAIL);
+        } else {
+            return Result.ok(100, ResultStateInfo.DELTE_SUCCESS);
         }
     }
 }

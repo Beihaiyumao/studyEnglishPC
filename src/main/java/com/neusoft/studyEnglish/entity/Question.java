@@ -1,10 +1,12 @@
 package com.neusoft.studyEnglish.entity;
 
+import java.util.List;
+
 /**
  * 问题题目实体
  */
 public class Question {
-    private Integer questionId;
+    private String questionId;
 
     private String examQuestionId;
 
@@ -12,11 +14,21 @@ public class Question {
 
     private String trueOptionId;
 
-    public Integer getQuestionId() {
+    private List<Option> optionList;
+
+    public List<Option> getOptionList() {
+        return optionList;
+    }
+
+    public void setOptionList(List<Option> optionList) {
+        this.optionList = optionList;
+    }
+
+    public String getQuestionId() {
         return questionId;
     }
 
-    public void setQuestionId(Integer questionId) {
+    public void setQuestionId(String questionId) {
         this.questionId = questionId;
     }
 
@@ -25,7 +37,7 @@ public class Question {
     }
 
     public void setExamQuestionId(String examQuestionId) {
-        this.examQuestionId = examQuestionId == null ? null : examQuestionId.trim();
+        this.examQuestionId = examQuestionId;
     }
 
     public String getContent() {

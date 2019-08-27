@@ -4,7 +4,7 @@ package com.neusoft.studyEnglish.entity;
  * 试题试题【包括听力和阅读理解】
  */
 public class ExamQuestion {
-    private Integer examQuestionId;
+    private int compositionId;
 
     private String title;
 
@@ -14,12 +14,12 @@ public class ExamQuestion {
 
     private Integer gradeType; //试题所属等级 0 四级 1 六级
 
-    public Integer getExamQuestionId() {
-        return examQuestionId;
+    public int getCompositionId() {
+        return compositionId;
     }
 
-    public void setExamQuestionId(Integer examQuestionId) {
-        this.examQuestionId = examQuestionId;
+    public void setCompositionId(int compositionId) {
+        this.compositionId = compositionId;
     }
 
     public String getTitle() {

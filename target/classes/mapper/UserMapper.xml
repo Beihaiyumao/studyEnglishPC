@@ -66,4 +66,27 @@
         pic=#{path}
         where user_id=#{userId}
     </update>
+    <select id="zfCollectionList" resultType="com.neusoft.studyEnglish.entity.Collections">
+        SELECT
+        a.collection_id as collectionId,
+        b.title as title,
+        a.content_id as compositionId
+        from collection a
+        LEFT join composition b
+        on a.content_id=b.composition_id
+        where a.user_id=#{userId} and a.collection_type=0 and b.zftype=#{type}
+    </select>
+    <select id="lrCollectionList" resultType="com.neusoft.studyEnglish.entity.Collections">
+        SELECT
+        a.collection_id as collectionId,
+        b.title as title,
+        a.content_id as compositionId
+        from collection a
+        LEFT join exam_question b
+        on a.content_id=b.exam_question_id
+        where a.user_id=#{userId} and a.collection_type=0 and b.exam_type=#{type}
+    </select>
+    <delete id="deleteMyCollection">
+        DELETE from collection WHERE user_id=#{userId} and content_id=#{contentId}
+    </delete>
 </mapper>

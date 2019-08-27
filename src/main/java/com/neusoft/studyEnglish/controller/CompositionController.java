@@ -32,8 +32,8 @@ public class CompositionController {
      * @return
      */
     @GetMapping("/selectComById")
-    public Result selectComById(@RequestParam("comId")String comId,@RequestParam("userId") String userId) {
-        return compositionService.selectComById(comId,userId);
+    public Result selectComById(@RequestParam("comId") String comId, @RequestParam("userId") String userId) {
+        return compositionService.selectComById(comId, userId);
     }
 
     /**
@@ -44,8 +44,8 @@ public class CompositionController {
      * @return
      */
     @GetMapping("/collection")
-    public Result collection(@RequestParam("userId") String userId, @RequestParam("compositionId") String compositionId,@RequestParam("type")int type) {
-        return compositionService.collection(userId, compositionId,type);
+    public Result collection(@RequestParam("userId") String userId, @RequestParam("compositionId") String compositionId, @RequestParam("type") int type) {
+        return compositionService.collection(userId, compositionId, type);
     }
 
     /**
@@ -58,5 +58,16 @@ public class CompositionController {
     @GetMapping("/allExamQuestion")
     public Result allExamQuestion(String examType, String gradeType) {
         return compositionService.allExamQuestion(examType, gradeType);
+    }
+
+    /**
+     * 查看详情听力和阅读
+     *
+     * @param exQuId
+     * @return
+     */
+    @GetMapping("/examQuestion")
+    public Result examQuestion(String exQuId) {
+        return compositionService.examQuestion(exQuId);
     }
 }

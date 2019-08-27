@@ -12,9 +12,19 @@ public class Collections {
 
     private String contentId; //内容id
 
+    private String title;
+
     private int collectionType; //收藏内容类型 0作文或翻译 1 听力或阅读
 
     private Date createTime;
+    private String compositionId;
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getCollectionId() {
         return collectionId;
@@ -54,5 +64,13 @@ public class Collections {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getCompositionId() {
+        return compositionId;
+    }
+
+    public void setCompositionId(String compositionId) {
+        this.compositionId = compositionId;
     }
 }

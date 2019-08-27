@@ -1,9 +1,7 @@
 package com.neusoft.studyEnglish.dao;
 
 
-import com.neusoft.studyEnglish.entity.Collections;
-import com.neusoft.studyEnglish.entity.Composition;
-import com.neusoft.studyEnglish.entity.ExamQuestion;
+import com.neusoft.studyEnglish.entity.*;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -28,4 +26,8 @@ public interface CompositionMapper {
     Composition selectComById(String compositionId);
     //作文和翻译的收藏状态
     Collections zfCollectionState(@Param("userId")String userId,@Param("comId")String comId,@Param("type")int type);
+    ExamQuestion examQuestions(@Param("exQuId") String exQuId);
+    List<Question> questionList1(@Param("exQuId") String exQuId);
+    List<Option> optionList(@Param("questionId") String questionId);
+
 }

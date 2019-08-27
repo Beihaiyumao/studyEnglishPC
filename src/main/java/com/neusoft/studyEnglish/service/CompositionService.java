@@ -1,9 +1,7 @@
 package com.neusoft.studyEnglish.service;
 
 import com.neusoft.studyEnglish.dao.CompositionMapper;
-import com.neusoft.studyEnglish.entity.Collections;
-import com.neusoft.studyEnglish.entity.Composition;
-import com.neusoft.studyEnglish.entity.ExamQuestion;
+import com.neusoft.studyEnglish.entity.*;
 import com.neusoft.studyEnglish.tool.Result;
 import com.neusoft.studyEnglish.tool.ResultStateInfo;
 import com.neusoft.studyEnglish.tool.SystemTool;
@@ -69,7 +67,7 @@ public class CompositionService {
      * @return
      */
     public Result selectComById(String comId, String userId) {
-        Collections zfCollectionState = compositionMapper.zfCollectionState(userId,comId,0);
+        Collections zfCollectionState = compositionMapper.zfCollectionState(userId, comId, 0);
         Composition composition = compositionMapper.selectComById(comId);
         if (composition == null) {
             return Result.error(200, ResultStateInfo.SELECT_FAIL);
@@ -83,4 +81,26 @@ public class CompositionService {
             return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, composition);
         }
     }
+
+    /**
+     * 查询听力和阅读理解
+     *
+     * @param exQuId
+     * @return
+     */
+    public Result examQuestion(String exQuId) {
+        //查询题干
+        ExamQuestion examQuestion = compositionMapper.examQuestions(exQuId);
+        //问题列表
+        List<Question> questionList = compositionMapper.questionList1(exQuId);
+        for (Question question : questionList) {
+            //根据问题列表查询选项信息
+            List<Option> optionList = compositionMapper.optionList(question.getQuestionId());
+            question.setOptionList(optionList);
+        }
+        //封装一个VO给前端
+        ExamQuestionVO examQuestionVO = new ExamQuestionVO(examQuestion, questionList);
+        return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, examQuestionVO);
+    }
+
 }

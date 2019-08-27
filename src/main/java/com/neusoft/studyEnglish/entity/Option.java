@@ -4,26 +4,26 @@ package com.neusoft.studyEnglish.entity;
  * 选项表
  */
 public class Option {
-    private Integer optionId;
+    private int  optionId;
 
-    private String questionId;
+    private int questionId;
 
     private String content;
 
-    public Integer getOptionId() {
+    public int getOptionId() {
         return optionId;
     }
 
-    public void setOptionId(Integer optionId) {
+    public void setOptionId(int optionId) {
         this.optionId = optionId;
     }
 
-    public String getQuestionId() {
+    public int getQuestionId() {
         return questionId;
     }
 
-    public void setQuestionId(String questionId) {
-        this.questionId = questionId == null ? null : questionId.trim();
+    public void setQuestionId(int questionId) {
+        this.questionId = questionId;
     }
 
     public String getContent() {

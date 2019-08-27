@@ -70,6 +70,7 @@ public class UserController {
     public Result updateUsername(@RequestParam("userId") String userId, @RequestParam("username") String username) {
         return userService.updateUsername(userId, username);
     }
+
     /**
      * 根据用户id查询用户信息
      *
@@ -79,8 +80,9 @@ public class UserController {
     @RequestMapping(value = "/selectUserInfo", method = RequestMethod.GET)
     public Result selectUserInfo(@RequestParam("userId") String userId) {
         User userInfo = userService.selectUserInfoByUserId(userId);
-        return new Result(100, "成功",  userInfo);
+        return new Result(100, "成功", userInfo);
     }
+
     /**
      * 更新用户信息
      *
@@ -92,6 +94,7 @@ public class UserController {
 
         return userService.updateUserInfo(user);
     }
+
     /**
      * 更新头像
      *
@@ -102,5 +105,41 @@ public class UserController {
     @GetMapping("/updateHeadPhoto")
     public Result updateHeadPhoto(@RequestParam("fileName") String fileName, @RequestParam("userId") String userId) {
         return userService.updateHeadPhoto(fileName, userId);
+    }
+
+    /**
+     * 根据类别查询收藏的翻译和作文
+     *
+     * @param userId
+     * @param type
+     * @return
+     */
+    @GetMapping("/zfCollectionList")
+    public Result zfCollectionList(@RequestParam("userId") String userId, @RequestParam("type") String type) {
+        return userService.zfCollectionList(userId, type);
+    }
+
+    /**
+     * 根据类别查询收藏的听力和阅读
+     *
+     * @param userId
+     * @param type
+     * @return
+     */
+    @GetMapping("/lrCollectionList")
+    public Result lrCollectionList(@RequestParam("userId") String userId, @RequestParam("type") String type) {
+        return userService.lrCollectionList(userId, type);
+    }
+
+    /**
+     * 取消收藏
+     *
+     * @param userId
+     * @param compositionId
+     * @return
+     */
+    @GetMapping("/deleteMyCollection")
+    public Result deleteMyCollection(@RequestParam("userId") String userId, @RequestParam("compositionId") String compositionId) {
+        return userService.deleteMyCollection(userId, compositionId);
     }
 }
