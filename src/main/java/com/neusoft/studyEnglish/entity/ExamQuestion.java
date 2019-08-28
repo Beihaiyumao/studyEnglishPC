@@ -14,6 +14,16 @@ public class ExamQuestion {
 
     private Integer gradeType; //试题所属等级 0 四级 1 六级
 
+    private boolean  collectionState;
+
+    public boolean isCollectionState() {
+        return collectionState;
+    }
+
+    public void setCollectionState(boolean collectionState) {
+        this.collectionState = collectionState;
+    }
+
     public int getCompositionId() {
         return compositionId;
     }

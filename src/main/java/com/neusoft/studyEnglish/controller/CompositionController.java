@@ -67,7 +67,7 @@ public class CompositionController {
      * @return
      */
     @GetMapping("/examQuestion")
-    public Result examQuestion(String exQuId) {
-        return compositionService.examQuestion(exQuId);
+    public Result examQuestion(@RequestParam("exQuId") String exQuId, @RequestParam("userId") String userId) {
+        return compositionService.examQuestion(exQuId,userId);
     }
 }

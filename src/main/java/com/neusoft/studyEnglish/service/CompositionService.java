@@ -23,7 +23,11 @@ public class CompositionService {
      */
     public Result allComposition(String type, String zfType) {
         List<Composition> all = compositionMapper.all(type, zfType);
-        return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, all);
+        if(all.size()==0){
+            return Result.error(200,ResultStateInfo.SELECT_FAIL);
+        }else {
+            return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, all);
+        }
     }
 
     /**
@@ -57,7 +61,11 @@ public class CompositionService {
      */
     public Result allExamQuestion(String examType, String gradeType) {
         List<ExamQuestion> allExamQuestionList = compositionMapper.allExamQuestion(examType, gradeType);
-        return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, allExamQuestionList);
+        if(allExamQuestionList.size()==0){
+            return Result.error(200,ResultStateInfo.SELECT_FAIL);
+        }else {
+            return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, allExamQuestionList);
+        }
     }
 
     /**
@@ -88,9 +96,16 @@ public class CompositionService {
      * @param exQuId
      * @return
      */
-    public Result examQuestion(String exQuId) {
+    public Result examQuestion(String exQuId, String userId) {
+        Collections collections = compositionMapper.lrCollectionState(userId, exQuId, 1);
         //查询题干
         ExamQuestion examQuestion = compositionMapper.examQuestions(exQuId);
+        //判断是否已经收藏了
+        if (collections != null) {
+            examQuestion.setCollectionState(true);
+        } else {
+            examQuestion.setCollectionState(false);
+        }
         //问题列表
         List<Question> questionList = compositionMapper.questionList1(exQuId);
         for (Question question : questionList) {

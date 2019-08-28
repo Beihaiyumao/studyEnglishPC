@@ -135,6 +135,11 @@
     <include refid="Collection"/>
     FROM collection  WHERE user_id=#{userId} and collection_type=#{type} and content_id=#{comId}
   </select>
+  <select id="lrCollectionState" resultType="com.neusoft.studyEnglish.entity.Collections">
+    SELECT
+    <include refid="Collection"/>
+    FROM collection  WHERE user_id=#{userId} and collection_type=#{type} and content_id=#{exQmId}
+  </select>
   <sql id="ExamQuestion">
     exam_question_id as examQuestionId, title as title, content ,exam_type as examType
   </sql>

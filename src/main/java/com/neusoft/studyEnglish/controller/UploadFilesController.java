@@ -42,4 +42,18 @@ public class UploadFilesController {
         return uploadFilesService.uploadPic(file, path);
     }
 
+    /**
+     * 上传听力
+     * @param file
+     * @return
+     */
+    @PostMapping("/uploadMp3")
+    public Result uploadMp3(@RequestParam("file") MultipartFile file) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String time = sdf.format(new Date());
+        String path = ClassUtils.getDefaultClassLoader().getResource("").getPath() + "static/" + "mp3/" + time + "/";
+        return uploadFilesService.uploadMp3(file, path);
+    }
+
+
 }

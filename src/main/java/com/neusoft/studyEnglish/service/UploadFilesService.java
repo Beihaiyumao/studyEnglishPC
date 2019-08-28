@@ -17,6 +17,13 @@ import java.io.IOException;
  */
 @Service
 public class UploadFilesService {
+    /**
+     * 修改用户头像
+     *
+     * @param file
+     * @param path
+     * @return
+     */
     public Result uploadPic(MultipartFile file, String path) {
         if (!file.isEmpty()) {
             // 获取文件名称,包含后缀
@@ -27,7 +34,7 @@ public class UploadFilesService {
 
                 fileName = SystemTool.uuid() + "." + suffix;
             } else {
-                return  Result.error(200, ResultStateInfo.PHOTO_TYPE, false);
+                return Result.error(200, ResultStateInfo.PHOTO_TYPE, false);
             }
             File filePath = new File(path);
             //如果目录不存在则自动创建
@@ -37,7 +44,7 @@ public class UploadFilesService {
             try {
                 // 该方法是对文件写入的封装，在tool类中，导入该包即可使用，后面会给出方法
                 FileUtil.fileupload(file.getBytes(), path, fileName);
-                return Result.ok(100, ResultStateInfo.UPLOAD_SUCCESS,fileName);
+                return Result.ok(100, ResultStateInfo.UPLOAD_SUCCESS, fileName);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -47,4 +54,40 @@ public class UploadFilesService {
         return Result.error(200, ResultStateInfo.NO_KNOW_FAIL, false);
     }
 
+    /**
+     * 上传听力
+     *
+     * @param file
+     * @param path
+     * @return
+     */
+    public Result uploadMp3(MultipartFile file, String path) {
+        if (!file.isEmpty()) {
+            // 获取文件名称,包含后缀
+            String fileName = file.getOriginalFilename();
+            //获取文件后缀
+            String suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
+            if (suffix.equals("mp3") || suffix.equals("MP3")) {
+
+                fileName = SystemTool.uuid() + "." + "mp3";
+            } else {
+                return Result.error(200, "只支持mp3格式音频", false);
+            }
+            File filePath = new File(path);
+            //如果目录不存在则自动创建
+            if (!filePath.exists()) {
+                filePath.mkdirs();
+            }
+            try {
+                // 该方法是对文件写入的封装，在tool类中，导入该包即可使用，后面会给出方法
+                FileUtil.fileupload(file.getBytes(), path, fileName);
+                return Result.ok(100, "上传成功", fileName);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+                return Result.error(200, "上传失败", false);
+            }
+        }
+        return Result.error(300, "未知错误", false);
+    }
 }

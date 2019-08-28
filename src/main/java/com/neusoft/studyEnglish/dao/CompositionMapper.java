@@ -29,5 +29,6 @@ public interface CompositionMapper {
     ExamQuestion examQuestions(@Param("exQuId") String exQuId);
     List<Question> questionList1(@Param("exQuId") String exQuId);
     List<Option> optionList(@Param("questionId") String questionId);
-
+    //听力和阅读的收藏状态
+    Collections lrCollectionState(@Param("userId")String userId,@Param("exQmId")String comId,@Param("type")int type);
 }
