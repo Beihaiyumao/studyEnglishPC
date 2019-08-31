@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neusoft.studyEnglish.dao.CompositionMapper" >
+  <resultMap id="BaseResultMap" type="com.neusoft.studyEnglish.entity.Composition" >
+    <id column="composition_id" property="compositionId" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="pic" property="pic" jdbcType="VARCHAR" />
+    <result column="Introducer" property="introducer" jdbcType="VARCHAR" />
+    <result column="composition_type" property="compositionType" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    composition_id as compositionId , title, pic, Introducer, composition_type as compositionType, create_time as createTime,content,zftype as zfType
+  </sql>
+  <select id="selectComById" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from composition
+    where composition_id = #{compositionId,jdbcType=VARCHAR}
+  </select>
+  <select id="all" resultType="com.neusoft.studyEnglish.entity.Composition">
+    select
+    <include refid="Base_Column_List" />
+    from composition
+    where composition_type = #{type,jdbcType=VARCHAR} and zftype=#{zfType}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from composition
+    where composition_id = #{compositionId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.neusoft.studyEnglish.entity.Composition" >
+    insert into composition (composition_id, title, pic, 
+      Introducer, composition_type, create_time
+      )
+    values (#{compositionId,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{pic,jdbcType=VARCHAR}, 
+      #{introducer,jdbcType=VARCHAR}, #{compositionType,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.neusoft.studyEnglish.entity.Composition" >
+    insert into composition
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="compositionId != null" >
+        composition_id,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="pic != null" >
+        pic,
+      </if>
+      <if test="introducer != null" >
+        Introducer,
+      </if>
+      <if test="compositionType != null" >
+        composition_type,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="compositionId != null" >
+        #{compositionId,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="pic != null" >
+        #{pic,jdbcType=VARCHAR},
+      </if>
+      <if test="introducer != null" >
+        #{introducer,jdbcType=VARCHAR},
+      </if>
+      <if test="compositionType != null" >
+        #{compositionType,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.neusoft.studyEnglish.entity.Composition" >
+    update composition
+    <set >
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="pic != null" >
+        pic = #{pic,jdbcType=VARCHAR},
+      </if>
+      <if test="introducer != null" >
+        Introducer = #{introducer,jdbcType=VARCHAR},
+      </if>
+      <if test="compositionType != null" >
+        composition_type = #{compositionType,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where composition_id = #{compositionId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.neusoft.studyEnglish.entity.Composition" >
+    update composition
+    set title = #{title,jdbcType=VARCHAR},
+      pic = #{pic,jdbcType=VARCHAR},
+      Introducer = #{introducer,jdbcType=VARCHAR},
+      composition_type = #{compositionType,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where composition_id = #{compositionId,jdbcType=VARCHAR}
+  </update>
+  <insert id="collectionComposition">
+ insert into collection (collection_id, user_id, content_id,
+      collection_type, create_time)
+    values (#{collectionId,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{contentId,jdbcType=VARCHAR},
+      #{collectionType,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+
+  </insert>
+
+  <sql id="Exam_Question" >
+    exam_question_id as compositionId, title, content, exam_type as examType, grade_type as gradeType
+  </sql>
+  <select id="allExamQuestion" resultType="com.neusoft.studyEnglish.entity.ExamQuestion">
+    SELECT
+    <include refid="Exam_Question"/>
+    FROM exam_question WHERE exam_type=#{examType} and grade_type=#{gradeType}
+  </select>
+
+  <sql id="Collection" >
+    collection_id as collectionId, user_id as userId, content_id as contentId, collection_type as collectionType, create_time as createTime
+  </sql>
+  <select id="zfCollectionState" resultType="com.neusoft.studyEnglish.entity.Collections">
+    SELECT
+    <include refid="Collection"/>
+    FROM collection  WHERE user_id=#{userId} and collection_type=#{type} and content_id=#{comId}
+  </select>
+  <select id="lrCollectionState" resultType="com.neusoft.studyEnglish.entity.Collections">
+    SELECT
+    <include refid="Collection"/>
+    FROM collection  WHERE user_id=#{userId} and collection_type=#{type} and content_id=#{exQmId}
+  </select>
+  <sql id="ExamQuestion">
+    exam_question_id as examQuestionId, title as title, content ,exam_type as examType
+  </sql>
+  <select id="examQuestions" resultType="com.neusoft.studyEnglish.entity.ExamQuestion">
+    select
+    <include refid="ExamQuestion"/>
+    from exam_question where exam_question_id=#{exQuId}
+  </select>
+  <sql id="Question">
+    question_id as questionId,exam_question_id as examQuestionId,content,true_option_id as trueOptionId
+  </sql>
+  <select id="questionList1" resultType="com.neusoft.studyEnglish.entity.Question">
+    select
+    <include refid="Question"/>
+    from question where exam_question_id=#{exQuId}
+  </select>
+  <select id="questionListPage" resultType="com.neusoft.studyEnglish.entity.Question">
+    select
+    <include refid="Question"/>
+    from question where exam_question_id=#{exQuId}
+  </select>
+  <sql id="Option">
+    option_id as optionId,question_id as questionId, content
+  </sql>
+  <select id="optionList" resultType="com.neusoft.studyEnglish.entity.Option">
+    select
+    <include refid="Option"/>
+    from all_option where question_id=#{questionId}
+  </select>
+  <select id="trueAnswer" resultType="com.neusoft.studyEnglish.entity.TrueAnswer">
+    SELECT
+    a.content as questionTitle,
+    b.content as trueOption
+    FROM question a
+    left join all_option b
+    on a.question_id=b.question_id
+    where a.exam_question_id =#{exQuId} and a.true_option_id=b.option_id
+  </select>
+</mapper>

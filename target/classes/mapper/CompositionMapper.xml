@@ -156,6 +156,11 @@
     <include refid="Question"/>
     from question where exam_question_id=#{exQuId}
   </select>
+  <select id="questionListPage" resultType="com.neusoft.studyEnglish.entity.Question">
+    select
+    <include refid="Question"/>
+    from question where exam_question_id=#{exQuId}
+  </select>
   <sql id="Option">
     option_id as optionId,question_id as questionId, content
   </sql>
@@ -163,5 +168,14 @@
     select
     <include refid="Option"/>
     from all_option where question_id=#{questionId}
+  </select>
+  <select id="trueAnswer" resultType="com.neusoft.studyEnglish.entity.TrueAnswer">
+    SELECT
+    a.content as questionTitle,
+    b.content as trueOption
+    FROM question a
+    left join all_option b
+    on a.question_id=b.question_id
+    where a.exam_question_id =#{exQuId} and a.true_option_id=b.option_id
   </select>
 </mapper>

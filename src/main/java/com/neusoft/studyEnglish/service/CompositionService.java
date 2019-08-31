@@ -1,5 +1,7 @@
 package com.neusoft.studyEnglish.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.neusoft.studyEnglish.dao.CompositionMapper;
 import com.neusoft.studyEnglish.entity.*;
 import com.neusoft.studyEnglish.tool.Result;
@@ -23,9 +25,9 @@ public class CompositionService {
      */
     public Result allComposition(String type, String zfType) {
         List<Composition> all = compositionMapper.all(type, zfType);
-        if(all.size()==0){
-            return Result.error(200,ResultStateInfo.SELECT_FAIL);
-        }else {
+        if (all.size() == 0) {
+            return Result.error(200, ResultStateInfo.SELECT_FAIL);
+        } else {
             return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, all);
         }
     }
@@ -61,9 +63,9 @@ public class CompositionService {
      */
     public Result allExamQuestion(String examType, String gradeType) {
         List<ExamQuestion> allExamQuestionList = compositionMapper.allExamQuestion(examType, gradeType);
-        if(allExamQuestionList.size()==0){
-            return Result.error(200,ResultStateInfo.SELECT_FAIL);
-        }else {
+        if (allExamQuestionList.size() == 0) {
+            return Result.error(200, ResultStateInfo.SELECT_FAIL);
+        } else {
             return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, allExamQuestionList);
         }
     }
@@ -91,12 +93,32 @@ public class CompositionService {
     }
 
     /**
-     * 查询听力和阅读理解
+     * 查询听力和阅读理解题干
      *
      * @param exQuId
      * @return
      */
-    public Result examQuestion(String exQuId, String userId) {
+    public Page<Question> examQuestion(Integer pageNum, Integer pageSize, String exQuId) {
+
+        //问题列表
+        PageHelper.startPage(pageNum, pageSize);
+        Page<Question> questionListPage = compositionMapper.questionListPage(exQuId);
+        for (Question question : questionListPage) {
+            //根据问题列表查询选项信息
+            List<Option> optionList = compositionMapper.optionList(question.getQuestionId());
+            question.setOptionList(optionList);
+        }
+        return questionListPage;
+    }
+
+    /**
+     * 查询题干
+     *
+     * @param exQuId
+     * @param userId
+     * @return
+     */
+    public Result selectExamQuestionTG(String exQuId, String userId) {
         Collections collections = compositionMapper.lrCollectionState(userId, exQuId, 1);
         //查询题干
         ExamQuestion examQuestion = compositionMapper.examQuestions(exQuId);
@@ -106,16 +128,21 @@ public class CompositionService {
         } else {
             examQuestion.setCollectionState(false);
         }
-        //问题列表
-        List<Question> questionList = compositionMapper.questionList1(exQuId);
-        for (Question question : questionList) {
-            //根据问题列表查询选项信息
-            List<Option> optionList = compositionMapper.optionList(question.getQuestionId());
-            question.setOptionList(optionList);
-        }
-        //封装一个VO给前端
-        ExamQuestionVO examQuestionVO = new ExamQuestionVO(examQuestion, questionList);
-        return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, examQuestionVO);
+        return Result.ok(100, ResultStateInfo.SELECT_SUCCESS, examQuestion);
     }
 
+    /**
+     * 查询正确答案
+     *
+     * @param exQuId
+     * @return
+     */
+    public Result trueAnswer(String exQuId) {
+        List<TrueAnswer> trueAnswers=compositionMapper.trueAnswer(exQuId);
+        if(trueAnswers.size()==0){
+            return Result.error(200,ResultStateInfo.SELECT_FAIL);
+        }else {
+            return Result.ok(100, ResultStateInfo.SELECT_SUCCESS,trueAnswers );
+        }
+    }
 }

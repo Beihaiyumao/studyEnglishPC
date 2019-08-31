@@ -12,6 +12,7 @@
 	<artifactId>studyEnglish</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>studyEnglish</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -304,6 +305,8 @@
 	</dependencies>
 
 	<build>
+		<!--修改打包名称-->
+		<finalName>studyEnglish</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

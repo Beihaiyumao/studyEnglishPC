@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="975d61f0-9b1b-4066-bbd0-9b4d2459b288" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/TrueAnswer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/PageInfo.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UploadFilesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UploadFilesController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/CompositionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/CompositionMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/ExamQuestion.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/ExamQuestion.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/UploadFilesService.java" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/UploadFilesService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/studyEnglish.iml" afterPath="$PROJECT_DIR$/studyEnglish.iml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CompositionMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/CompositionMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,74 +43,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Composition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Composition.java">
+      <file leaf-file-name="CompositionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/CompositionMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="916">
-              <caret line="118" column="37" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+            <state relative-caret-position="819">
+              <caret line="44" column="31" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="31" />
               <folding>
-                <marker date="1566996833825" expanded="true" signature="1011:1088" ph="insert into user... " />
-                <marker date="1566996833825" expanded="true" signature="1183:1285" ph="select from user" />
-                <marker date="1566996833825" expanded="true" signature="1395:1479" ph="UPDATE user... " />
-                <marker date="1566996833825" expanded="true" signature="1593:1698" ph="select from user" />
-                <marker date="1566996833825" expanded="true" signature="1907:1991" ph="UPDATE user... " />
-                <marker date="1566996833825" expanded="true" signature="2146:2260" ph="update user... " />
-                <marker date="1566996833825" expanded="true" signature="2370:2445" ph="update user... " />
-                <marker date="1566996833825" expanded="true" signature="2560:2849" ph="SELECT a.col... collection" />
-                <marker date="1566996833825" expanded="true" signature="2964:3260" ph="SELECT a.col... collection" />
-                <marker date="1566996833825" expanded="true" signature="3320:3394" ph="DELETE from collection... " />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Collections.java">
+      <file leaf-file-name="TrueAnswer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/TrueAnswer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompositionMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/CompositionMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="210">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,12 +77,32 @@
       <file leaf-file-name="CompositionController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="420">
+              <caret line="98" column="39" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="39" />
               <folding>
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudyEnglishApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,49 +110,67 @@
       <file leaf-file-name="CompositionMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="140" column="96" lean-forward="false" selection-start-line="140" selection-start-column="96" selection-end-line="140" selection-end-column="96" />
+            <state relative-caret-position="257">
+              <caret line="160" column="31" lean-forward="false" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
               <folding>
-                <marker date="1566997182563" expanded="true" signature="1121:1251" ph="select from composition" />
-                <marker date="1566997182563" expanded="true" signature="1345:1467" ph="select from composition" />
-                <marker date="1566997182563" expanded="true" signature="1345:1488" ph="select from composition" />
-                <marker date="1566997182563" expanded="true" signature="1574:1658" ph="delete from composition... " />
-                <marker date="1566997182563" expanded="true" signature="1759:2084" ph="insert into composition... " />
-                <marker date="1566997182563" expanded="true" signature="3427:4026" ph="update composition... " />
-                <marker date="1566997182563" expanded="true" signature="4139:4464" ph="update composition... " />
-                <marker date="1566997182563" expanded="true" signature="4516:4792" ph="insert into collection... " />
-                <marker date="1566997182563" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
-                <marker date="1566997182563" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
-                <marker date="1566997182563" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
-                <marker date="1566997182563" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
-                <marker date="1566997182563" expanded="true" signature="6055:6153" ph="select from exam_question" />
-                <marker date="1566997182563" expanded="true" signature="6389:6478" ph="select from question" />
-                <marker date="1566997182563" expanded="true" signature="6664:6752" ph="select from all_option" />
+                <marker date="1567088472638" expanded="true" signature="1121:1251" ph="select from composition" />
+                <marker date="1567088472638" expanded="true" signature="1345:1467" ph="select from composition" />
+                <marker date="1567088472638" expanded="true" signature="1345:1488" ph="select from composition" />
+                <marker date="1567088472638" expanded="true" signature="1574:1658" ph="delete from composition... " />
+                <marker date="1567088472638" expanded="true" signature="1759:2084" ph="insert into composition... " />
+                <marker date="1567088472638" expanded="true" signature="3427:4026" ph="update composition... " />
+                <marker date="1567088472638" expanded="true" signature="4139:4464" ph="update composition... " />
+                <marker date="1567088472638" expanded="true" signature="4516:4792" ph="insert into collection... " />
+                <marker date="1567088472638" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
+                <marker date="1567088472638" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
+                <marker date="1567088472638" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
+                <marker date="1567088472638" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
+                <marker date="1567088472638" expanded="true" signature="6055:6153" ph="select from exam_question" />
+                <marker date="1567088472638" expanded="true" signature="6389:6478" ph="select from question" />
+                <marker date="1567088472638" expanded="true" signature="6582:6671" ph="select from question" />
+                <marker date="1567088472638" expanded="true" signature="6857:6945" ph="select from all_option" />
+                <marker date="1567088472638" expanded="true" signature="7045:7266" ph="SELECT a.con... question" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompositionService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamQuestion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/ExamQuestion.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-              <folding>
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="523">
+              <caret line="63" column="6" lean-forward="true" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompositionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2688">
+              <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadFilesService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/UploadFilesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -203,12 +203,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/SystemTool.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/composition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Collection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/baidufanyi/HttpGet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/baidufanyi/MD5.java" />
@@ -228,11 +225,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UploadFilesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/UploadFilesService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/ExamQuestion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/PageInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/TrueAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/CompositionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/ExamQuestion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java" />
       </list>
     </option>
   </component>
@@ -249,11 +251,16 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="studyEnglish" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="studyEnglish" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="923" />
     <option name="width" value="1006" />
     <option name="height" value="744" />
@@ -274,9 +281,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,6 +399,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,8 +412,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.neusoft.studyEnglish.controller" />
       <recent name="com.neusoft.studyEnglish.tool" />
+      <recent name="com.neusoft.studyEnglish.controller" />
       <recent name="com.neusoft.studyEnglish.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -583,7 +590,11 @@
       <workItem from="1566707975189" duration="12307000" />
       <workItem from="1566817261453" duration="7722000" />
       <workItem from="1566903290326" duration="7895000" />
-      <workItem from="1566991774108" duration="3550000" />
+      <workItem from="1566991774108" duration="4065000" />
+      <workItem from="1567077948313" duration="1696000" />
+      <workItem from="1567082599195" duration="4028000" />
+      <workItem from="1567165838531" duration="3275000" />
+      <workItem from="1567229553102" duration="3526000" />
     </task>
     <servers />
   </component>
@@ -593,35 +604,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43410000" />
+    <option name="totallyTimeSpent" value="56450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16077536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37970352" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26502147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1927024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16077536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39680728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28004292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60205245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -644,57 +657,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Option.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <element signature="e#225#226#0" expanded="false" />
-            <element signature="e#270#271#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#344#345#0" expanded="false" />
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#534#535#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#650#651#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#408#409#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#522#523#0" expanded="false" />
-            <element signature="e#574#575#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#696#697#0" expanded="false" />
-            <element signature="e#756#757#0" expanded="false" />
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#918#919#0" expanded="false" />
-            <element signature="e#988#989#0" expanded="false" />
-            <element signature="e#1027#1028#0" expanded="false" />
-            <element signature="e#1062#1063#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,34 +668,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#391#392#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#461#462#0" expanded="false" />
-            <element signature="e#495#496#0" expanded="false" />
-            <element signature="e#534#535#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#816#817#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-            <element signature="e#919#920#0" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#1001#1002#0" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1115#1116#0" expanded="false" />
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1209#1210#0" expanded="false" />
-            <element signature="e#1261#1262#0" expanded="false" />
-            <element signature="e#1296#1297#0" expanded="false" />
-            <element signature="e#1329#1330#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1423#1424#0" expanded="false" />
-            <element signature="e#1463#1464#0" expanded="false" />
-            <element signature="e#1499#1500#0" expanded="false" />
-            <element signature="e#1557#1558#0" expanded="false" />
-            <element signature="e#1607#1608#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -748,8 +687,8 @@
         <state relative-caret-position="567">
           <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
           <folding>
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,21 +698,23 @@
         <state relative-caret-position="2835">
           <caret line="135" column="95" lean-forward="false" selection-start-line="135" selection-start-column="95" selection-end-line="135" selection-end-column="95" />
           <folding>
-            <marker date="1566997182563" expanded="true" signature="1121:1251" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1345:1467" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1345:1488" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1574:1658" ph="delete from composition... " />
-            <marker date="1566997182563" expanded="true" signature="1759:2084" ph="insert into composition... " />
-            <marker date="1566997182563" expanded="true" signature="3427:4026" ph="update composition... " />
-            <marker date="1566997182563" expanded="true" signature="4139:4464" ph="update composition... " />
-            <marker date="1566997182563" expanded="true" signature="4516:4792" ph="insert into collection... " />
-            <marker date="1566997182563" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
-            <marker date="1566997182563" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
-            <marker date="1566997182563" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
-            <marker date="1566997182563" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
-            <marker date="1566997182563" expanded="true" signature="6055:6153" ph="select from exam_question" />
-            <marker date="1566997182563" expanded="true" signature="6389:6478" ph="select from question" />
-            <marker date="1566997182563" expanded="true" signature="6664:6752" ph="select from all_option" />
+            <marker date="1567088472638" expanded="true" signature="1121:1251" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1345:1467" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1345:1488" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1574:1658" ph="delete from composition... " />
+            <marker date="1567088472638" expanded="true" signature="1759:2084" ph="insert into composition... " />
+            <marker date="1567088472638" expanded="true" signature="3427:4026" ph="update composition... " />
+            <marker date="1567088472638" expanded="true" signature="4139:4464" ph="update composition... " />
+            <marker date="1567088472638" expanded="true" signature="4516:4792" ph="insert into collection... " />
+            <marker date="1567088472638" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
+            <marker date="1567088472638" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
+            <marker date="1567088472638" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
+            <marker date="1567088472638" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
+            <marker date="1567088472638" expanded="true" signature="6055:6153" ph="select from exam_question" />
+            <marker date="1567088472638" expanded="true" signature="6389:6478" ph="select from question" />
+            <marker date="1567088472638" expanded="true" signature="6582:6671" ph="select from question" />
+            <marker date="1567088472638" expanded="true" signature="6857:6945" ph="select from all_option" />
+            <marker date="1567088472638" expanded="true" signature="7045:7266" ph="SELECT a.con... question" />
           </folding>
         </state>
       </provider>
@@ -790,16 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1709#1710#0" expanded="false" />
-            <element signature="e#1738#1739#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#1815#1816#0" expanded="false" />
-            <element signature="e#1857#1858#0" expanded="false" />
-            <element signature="e#1895#1896#0" expanded="false" />
-            <element signature="e#1958#1959#0" expanded="false" />
-            <element signature="e#2012#2013#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,9 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,8 +790,8 @@
         <state relative-caret-position="357">
           <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="60" />
           <folding>
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -878,21 +808,23 @@
         <state relative-caret-position="441">
           <caret line="21" column="72" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
           <folding>
-            <marker date="1566997182563" expanded="true" signature="1121:1251" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1345:1467" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1345:1488" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1574:1658" ph="delete from composition... " />
-            <marker date="1566997182563" expanded="true" signature="1759:2084" ph="insert into composition... " />
-            <marker date="1566997182563" expanded="true" signature="3427:4026" ph="update composition... " />
-            <marker date="1566997182563" expanded="true" signature="4139:4464" ph="update composition... " />
-            <marker date="1566997182563" expanded="true" signature="4516:4792" ph="insert into collection... " />
-            <marker date="1566997182563" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
-            <marker date="1566997182563" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
-            <marker date="1566997182563" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
-            <marker date="1566997182563" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
-            <marker date="1566997182563" expanded="true" signature="6055:6153" ph="select from exam_question" />
-            <marker date="1566997182563" expanded="true" signature="6389:6478" ph="select from question" />
-            <marker date="1566997182563" expanded="true" signature="6664:6752" ph="select from all_option" />
+            <marker date="1567088472638" expanded="true" signature="1121:1251" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1345:1467" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1345:1488" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1574:1658" ph="delete from composition... " />
+            <marker date="1567088472638" expanded="true" signature="1759:2084" ph="insert into composition... " />
+            <marker date="1567088472638" expanded="true" signature="3427:4026" ph="update composition... " />
+            <marker date="1567088472638" expanded="true" signature="4139:4464" ph="update composition... " />
+            <marker date="1567088472638" expanded="true" signature="4516:4792" ph="insert into collection... " />
+            <marker date="1567088472638" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
+            <marker date="1567088472638" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
+            <marker date="1567088472638" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
+            <marker date="1567088472638" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
+            <marker date="1567088472638" expanded="true" signature="6055:6153" ph="select from exam_question" />
+            <marker date="1567088472638" expanded="true" signature="6389:6478" ph="select from question" />
+            <marker date="1567088472638" expanded="true" signature="6582:6671" ph="select from question" />
+            <marker date="1567088472638" expanded="true" signature="6857:6945" ph="select from all_option" />
+            <marker date="1567088472638" expanded="true" signature="7045:7266" ph="SELECT a.con... question" />
           </folding>
         </state>
       </provider>
@@ -908,15 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,23 +858,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/neusoft/studyEnglish/StudyEnglishApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1031,31 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Option.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#225#226#0" expanded="false" />
-            <element signature="e#270#271#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#344#345#0" expanded="false" />
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#534#535#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#650#651#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,33 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#408#409#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#522#523#0" expanded="false" />
-            <element signature="e#574#575#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#696#697#0" expanded="false" />
-            <element signature="e#756#757#0" expanded="false" />
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#918#919#0" expanded="false" />
-            <element signature="e#988#989#0" expanded="false" />
-            <element signature="e#1027#1028#0" expanded="false" />
-            <element signature="e#1062#1063#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/UploadFilesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-838">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="693">
           <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding />
         </state>
@@ -1135,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="1806">
           <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
           <folding>
             <marker date="1566996833825" expanded="true" signature="1011:1088" ph="insert into user... " />
@@ -1152,41 +1010,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="118" column="37" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="140" column="96" lean-forward="false" selection-start-line="140" selection-start-column="96" selection-end-line="140" selection-end-column="96" />
-          <folding>
-            <marker date="1566997182563" expanded="true" signature="1121:1251" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1345:1467" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1345:1488" ph="select from composition" />
-            <marker date="1566997182563" expanded="true" signature="1574:1658" ph="delete from composition... " />
-            <marker date="1566997182563" expanded="true" signature="1759:2084" ph="insert into composition... " />
-            <marker date="1566997182563" expanded="true" signature="3427:4026" ph="update composition... " />
-            <marker date="1566997182563" expanded="true" signature="4139:4464" ph="update composition... " />
-            <marker date="1566997182563" expanded="true" signature="4516:4792" ph="insert into collection... " />
-            <marker date="1566997182563" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
-            <marker date="1566997182563" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
-            <marker date="1566997182563" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
-            <marker date="1566997182563" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
-            <marker date="1566997182563" expanded="true" signature="6055:6153" ph="select from exam_question" />
-            <marker date="1566997182563" expanded="true" signature="6389:6478" ph="select from question" />
-            <marker date="1566997182563" expanded="true" signature="6664:6752" ph="select from all_option" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
+        <state relative-caret-position="966">
           <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="28" />
           <folding />
         </state>
@@ -1194,7 +1020,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/Composition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="504">
           <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="35" />
           <folding />
         </state>
@@ -1205,38 +1031,137 @@
         <state relative-caret-position="378">
           <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#468#469#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/tool/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/UploadFilesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/dao/CompositionMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="819">
+          <caret line="44" column="31" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        <state relative-caret-position="2688">
+          <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompositionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="160" column="31" lean-forward="false" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
           <folding>
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
+            <marker date="1567088472638" expanded="true" signature="1121:1251" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1345:1467" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1345:1488" ph="select from composition" />
+            <marker date="1567088472638" expanded="true" signature="1574:1658" ph="delete from composition... " />
+            <marker date="1567088472638" expanded="true" signature="1759:2084" ph="insert into composition... " />
+            <marker date="1567088472638" expanded="true" signature="3427:4026" ph="update composition... " />
+            <marker date="1567088472638" expanded="true" signature="4139:4464" ph="update composition... " />
+            <marker date="1567088472638" expanded="true" signature="4516:4792" ph="insert into collection... " />
+            <marker date="1567088472638" expanded="true" signature="5040:5162" ph="SELECT FROM exam_question" />
+            <marker date="1567088472638" expanded="true" signature="5445:5558" ph="SELECT * FRO... collection" />
+            <marker date="1567088472638" expanded="true" signature="5445:5582" ph="SELECT FROM collection" />
+            <marker date="1567088472638" expanded="true" signature="5690:5828" ph="SELECT FROM collection" />
+            <marker date="1567088472638" expanded="true" signature="6055:6153" ph="select from exam_question" />
+            <marker date="1567088472638" expanded="true" signature="6389:6478" ph="select from question" />
+            <marker date="1567088472638" expanded="true" signature="6582:6671" ph="select from question" />
+            <marker date="1567088472638" expanded="true" signature="6857:6945" ph="select from all_option" />
+            <marker date="1567088472638" expanded="true" signature="7045:7266" ph="SELECT a.con... question" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/service/CompositionService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/entity/TrueAnswer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/CompositionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="98" column="39" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="39" />
+          <folding>
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/StudyEnglishApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neusoft/studyEnglish/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="63" column="6" lean-forward="true" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
           <folding />
         </state>
       </provider>
