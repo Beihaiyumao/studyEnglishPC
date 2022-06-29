@@ -31,7 +31,7 @@
 		<springfox-swagger2.version>2.6.1</springfox-swagger2.version>
 		<springfox-swagger-ui.version>2.6.1</springfox-swagger-ui.version>
 		<com.jayway.jsonpath.version>2.3.0</com.jayway.jsonpath.version>
-		<org.apache.poi.version>3.17</org.apache.poi.version>
+		<org.apache.poi.version>4.1.1</org.apache.poi.version>
 	</properties>
 
 	<dependencies>
